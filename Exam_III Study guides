@@ -1,0 +1,88 @@
+
+1.	Subgroup discovery: Subgroup discovery is a method of identifying interesting subgroups in a dataset that exhibit a certain behavior or pattern.
+
+2.	Beam search: Beam search is a heuristic search algorithm used in various machine learning tasks, including natural language processing and speech recognition, to explore the search space more efficiently.
+
+3.	Unsupervised learning: Unsupervised learning is a type of machine learning where the model is trained on unlabelled data to discover patterns and structure in the data.
+
+4.	Frequent patterns: Frequent patterns are patterns that occur frequently in a dataset, such as frequent item sets or frequent subsequences.
+
+5.	Frequent item sets: Frequent item sets are sets of items that occur frequently in a transactional database.
+6.	Association rules: Association rules are rules that capture the relationships between items in a transactional database, such as "If a customer buys item A, they are likely to buy item B."
+
+7.	Support: Support is a measure of the frequency of an item set in a transactional database.
+
+8.	Confidence: Confidence is a measure of the degree of certainty that a model assigns to its predictions or decisions.
+
+9.	Apriori principle: The apriori principle is a concept in frequent itemset mining that states that if an itemset is frequent, then all its subsets must also be frequent.
+
+10.	Apriori algorithm: The Apriori algorithm is a classical algorithm for mining frequent itemsets in a transactional database.
+
+11.	How the Apriori principle is used in the Apriori algorithm: The Apriori principle is used in the Apriori algorithm to reduce the search space by pruning infrequent itemsets based on the apriori principle.
+
+12.	Inefficiencies of Apriori algorithm and how FP-growth mitigates those: The Apriori algorithm can be inefficient for large datasets due to its candidate generation and counting steps. FP-growth is an alternative algorithm that uses a compressed representation of the dataset to avoid these inefficiencies.
+
+13.	Problem of redundancy in frequent pattern discovery: Redundancy occurs when a frequent pattern is a subpattern of another frequent pattern. This can lead to increased computation time and decreased interpretability.
+
+14.	Closed and maximal itemsets: Closed itemsets are itemsets that are frequent but have no frequent superset, while maximal itemsets are itemsets that are frequent and cannot be extended to a larger frequent itemset.
+
+15.	Minimum description length principle: The minimum description length principle is a criterion for model selection that states that the best model is the one that minimizes the description length of the data.
+
+16.	Clustering: Clustering is a technique in unsupervised learning that involves grouping similar data points into clusters based on some similarity measure.
+
+17.	Hierarchical Agglomerative Clustering: Hierarchical Agglomerative Clustering is a type of clustering algorithm that creates a hierarchy of clusters by recursively merging the two most similar clusters.
+
+18.	Single linkage vs. complete linkage: Single linkage and complete linkage are two distance measures used in hierarchical clustering to determine the distance between clusters.
+
+19.	Dendogram: A dendrogram is a diagram that shows the hierarchical relationship between clusters in hierarchical clustering.
+
+20.	Density-based clustering: Density-based clustering is a type of clustering algorithm that groups data points based on their density in the feature space.
+
+21.	DBSCAN: DBSCAN is a density-based clustering algorithm that groups data points based on their density and proximity to other data points.
+
+22.	K-means: K-means is a centroid-based clustering algorithm that groups data points into K clusters based on their distance to the nearest centroid.
+
+23.	K-means++: K-means++ is an improvement K-means++ is an improvement over the K-means clustering algorithm. It uses a smarter initialization method to choose the initial cluster centers in order to improve the convergence rate and reduce the risk of getting stuck in local optima. The K-means++ initialization method involves selecting the first center randomly from the data points and then choosing the next centers with a probability proportional to the distance from the existing centers. This helps to ensure that the initial centers are well spread out across the dataset and improves the chances of finding the optimal solution.
+
+24.	Intuition of Elbow Method: The Elbow Method is a technique used in K-means clustering to determine the optimal number of clusters for a given dataset. It involves plotting the within-cluster sum of squares (WCSS) against the number of clusters and selecting the point where the curve starts to level off, resembling an elbow.
+
+25.	Partition around medoids: Partition around medoids (PAM) is a clustering algorithm similar to K-means, but instead of using centroids, it uses medoids, which are the most centrally located objects in a cluster.
+
+26.	Gaussian mixture model (what is it and why needed?): Gaussian mixture model (GMM) is a probabilistic model used in machine learning for density estimation and clustering. It assumes that the data points are generated from a mixture of several Gaussian distributions, each with a different mean and covariance matrix. GMMs are useful for modeling complex distributions with multiple modes.
+
+27.	Expectation maximization: Expectation maximization (EM) is an iterative algorithm used to estimate the parameters of a probabilistic model when the data is incomplete or partially observed. It alternates between computing the expected values of the latent variables and maximizing the likelihood of the observed data.
+
+28.	Genetic algorithms (intuition and main concepts): Genetic algorithms (GAs) are optimization algorithms inspired by the process of natural selection. They use a population-based approach to find the optimal solution to a problem by repeatedly applying genetic operators, such as selection, crossover, and mutation.
+
+29.	Transfer learning: Transfer learning is a machine learning technique that involves using the knowledge gained from solving one task to improve the performance of another related task. It can help to reduce the amount of labeled data needed to train a model and improve the generalization of the model.
+
+30.	Multitask learning: Multitask learning is a machine learning technique that involves learning multiple related tasks simultaneously to improve the performance of each task. It can help to improve the efficiency of the learning process and reduce the risk of overfitting.
+
+31.	Data amplification: Data amplification is a technique used in machine learning to artificially increase the size of a dataset by generating additional examples from existing data points through transformations, such as rotation, translation, and scaling.
+
+32.	Semi-supervised learning: Semi-supervised learning is a type of machine learning where the model is trained on a combination of labeled and unlabeled data. It can help to improve the performance of the model when labeled data is limited or expensive to obtain.
+
+33.	Self-supervised learning (motivation and general goal): Self-supervised learning is a type of unsupervised learning where the model is trained to predict certain features or attributes of the data, such as context or rotation, rather than using explicit labels. The goal is to learn a good representation of the data that can be used for downstream tasks.
+
+34.	Anomaly detection: Anomaly detection is a machine learning technique that involves identifying data points that deviate significantly from the norm or expected behavior.
+
+35.	Point vs. contextual vs. collective anomalies: Point anomalies are individual data points that are anomalous, while contextual anomalies are anomalous only in a specific context or subpopulation, and collective anomalies are anomalous only when viewed in the aggregate.
+
+36.	Problem of class imbalance in anomaly detection: Class imbalance occurs when the number of normal instances is much larger than the number of anomalous instances in a dataset. This can lead to biased models that perform poorly on detecting anomalies.
+
+37.	Autoencoders for anomaly detection: Autoencoders are a type of neural network that can be used for anomaly detection by learning to reconstruct normal data points and flagging as anomalous those that have a high reconstruction error.
+
+38.	Actor-critic model for reinforcement learning: The Actor-critic model is a type of reinforcement learning algorithm that combines the strengths of both value-based and policy-based methods. It uses two neural networks: one for the actor that selects actions, and one for the critic that estimates the value function.
+
+39.	Goal of RL: The goal of reinforcement learning (RL) is to learn a policy that maximizes the cumulative reward received by an agent in an environment.
+
+40.	Table-based Q-learning: Q-learning is a value-based reinforcement learning algorithm that learns the optimal action-value function by iteratively updating the Q-values for each state-action pair. In table-based Q-learning, the Q-values are stored in a lookup table.
+
+
+41.	Exploration vs. exploitation: Exploration refers to the process of trying new actions to discover potentially better ones, while exploitation refers to the process of selecting the action with the highest expected reward based on the current policy. In reinforcement learning, finding the right balance between exploration and exploitation is crucial to achieving optimal performance.
+
+
+42.	Need for Deep RL: Deep RL is needed when the state and action spaces are high-dimensional or continuous, making it impractical to use table-based methods or function approximation.
+
+
+43.	Temporal difference learning: Temporal difference (TD) learning is a type of reinforcement learning that updates the value function for each state based on the temporal difference between the predicted and actual rewards received after taking an action. It combines ideas from both Monte Carlo and dynamic programming methods.
